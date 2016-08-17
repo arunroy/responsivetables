@@ -6,7 +6,7 @@
 			Responsive Tables Exercise
 		</title>
 		<link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
-		
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/json2/20110223/json2.js"></script>
 	</head>
 	<body>
 	
@@ -33,27 +33,6 @@
 		<h1>Savings Account</h1>
 
 		<hr />
-<!--		<table id="productTable">
-			<tr>
-				<th>Product</th>
-				<th>Interest Rate</th>
-				<th>Minimum Deposit</th>
-				<th>Interest Type</th>
-			</tr>
-			<tr>
-				<td>Fixed Saver</td>
-				<td>2.20%</td>
-				<td>£500</td>
-				<td>Fixed</td>
-			</tr>
-			<tr>
-				<td>Flex Saver</td>
-				<td>1.50%</td>
-				<td>£0</td>
-				<td>Tracker</td>
-			</tr>
-			
-		</table>-->
 		
 		<table id="productTableMin">
 				<tr><td></td></tr>
@@ -72,6 +51,23 @@
 		<div id="userTable"></div>
 		<div id="prodTable"></div>
 	</div>
+	
+	<div>
+		<a href="#" onclick="toggleViews()">Next Test</a>
+	</div>
+	
+	<script type="text/javascript">
+		function toggleViews(){
+			if(document.getElementById('lookupDiv').style.display=='none'){
+				document.getElementById('lookupDiv').style.display='block';
+				document.getElementById('pivotTableDiv').style.display='none';
+			}
+			else{
+				document.getElementById('lookupDiv').style.display='none';
+				document.getElementById('pivotTableDiv').style.display='block';
+			}
+		}
+	</script>
 <!--	division for practical test Lookup-->
 		<script type="text/javascript" src="javascripts/ajaxoperations.js"></script>
 		<script type="text/javascript" src="javascripts/lookup.js"></script>

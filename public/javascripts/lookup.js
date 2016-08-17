@@ -19,13 +19,13 @@ function getData(e){
 
 		}
 	
-		if(flag==true){
+/*		if(flag==true){
 			console.log('Value found in server data');
 		
 		}
 			else{
 				console.log('Not found');
-			}
+			}*/
 		   
 	}
 	
@@ -116,6 +116,10 @@ function fetchData(){
 		console.log(emp);
 		
 		employee=JSON.parse(emp);
+		
+		console.log('JSON 2 data');
+		var json_data = JSON.stringify(obj)
+		console.log(json_data);
 		
 		generateTable(employee);
 	
