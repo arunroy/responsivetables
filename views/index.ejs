@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Responsive Tables Exercise
+		</title>
+		<link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+		
+	</head>
+	<body>
+	
+<!--	division for practical test Lookup-->
+	<div id="lookupDiv">
+		
+		<h1>Search User</h1>
+
+		<hr />
+		
+		<input type="text" id="searchTxt"></input>
+		
+		<input type="button" id="searchTxtBtn" onclick="fetchData()" value="Search"></input>
+		
+		<hr />
+
+		<div id="userTable"></div>
+	</div>
+<!--	division for practical test Lookup ends here -->
+	
+<!--	division for practical test Lookup-->
+	<div id="pivotTableDiv">
+		
+		<h1>Savings Account</h1>
+
+		<hr />
+<!--		<table id="productTable">
+			<tr>
+				<th>Product</th>
+				<th>Interest Rate</th>
+				<th>Minimum Deposit</th>
+				<th>Interest Type</th>
+			</tr>
+			<tr>
+				<td>Fixed Saver</td>
+				<td>2.20%</td>
+				<td>£500</td>
+				<td>Fixed</td>
+			</tr>
+			<tr>
+				<td>Flex Saver</td>
+				<td>1.50%</td>
+				<td>£0</td>
+				<td>Tracker</td>
+			</tr>
+			
+		</table>-->
+		
+		<table id="productTableMin">
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+		</table>
+
+		<div id="linksWrapper">
+			<a href="#" id="prevBtn" onclick="updateProductMinTable(true,0)"></a>
+			<a href="#" id="nextBtn" onclick="updateProductMinTable(true,1)"></a>
+		</div>
+		
+		<hr />
+
+		<div id="userTable"></div>
+		<div id="prodTable"></div>
+	</div>
+<!--	division for practical test Lookup-->
+		<script type="text/javascript" src="javascripts/ajaxoperations.js"></script>
+		<script type="text/javascript" src="javascripts/lookup.js"></script>
+		<script type="text/javascript" src="javascripts/savingsBank.js"></script>
+
+	</body>
+</html>

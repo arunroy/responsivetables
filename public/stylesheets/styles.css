@@ -1,0 +1,98 @@
+body{
+	  font: 20px 'Helvetica Regular', Arial, sans-serif;
+	  color: #0c332f;
+	  line-height: 36px;
+}
+
+table{
+/*	border-color: black;
+	border-style: double;*/
+	border-collapse: collapse;
+	padding: .75rem;
+    vertical-align: top;
+}
+table tr td, table th{
+	padding: 10px;
+	text-align: left;
+	border: 1px solid #eceeff;
+}
+
+table td.col-2, th.col-2{
+/*	color: red; */
+}
+
+table th{
+	vertical-align: bottom;
+}
+
+table tr:nth-child(even){
+	background-color: #eceeef;
+} 
+
+.table-bordered td, .table-bordered th {
+    border: 1px solid #eceeef;
+}
+
+table#productTableMin {
+		display:none;
+		min-width: 200px;
+}
+
+h1{
+	color: darkgrey;
+}
+
+#lookupDiv{
+	display: none;
+}
+
+@media only screen and (max-width: 544px) {
+	
+	h1{
+	color: black;
+	font-size: 36px;
+	}
+	
+	table td.col-2, table td.col-3, table th.col-2, table th.col-3{
+		display: none;
+	}
+	
+	table#productTable {
+		display:none;
+	}
+	
+	table#productTableMin{
+		display:block;
+	}
+	
+	table#productTableMin td{
+		color: green;
+		min-width: 200px;
+		text-align: center;
+	}
+	
+	#linksWrapper{
+		overflow: hidden;
+		max-width: 400px;
+	}
+	
+	#nextBtn{
+		float: right;
+		margin: 10px;
+	}
+
+	#prevBtn{
+		float: left;
+		margin: 10px;
+	}
+
+}
+
+
+/*@media all and (min-width: 551px){
+		
+	#linksWrapper{
+		display: none;
+	}
+
+}*/
